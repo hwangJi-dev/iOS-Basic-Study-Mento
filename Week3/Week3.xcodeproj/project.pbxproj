@@ -13,6 +13,8 @@
 		335BBE852639580C003080DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335BBE832639580C003080DA /* Main.storyboard */; };
 		335BBE872639580D003080DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335BBE862639580D003080DA /* Assets.xcassets */; };
 		335BBE8A2639580D003080DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 335BBE882639580D003080DA /* LaunchScreen.storyboard */; };
+		3369FFC82645697F00BD8FF8 /* navigationFirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369FFC72645697F00BD8FF8 /* navigationFirstVC.swift */; };
+		3369FFCB264569C800BD8FF8 /* NavigationSecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3369FFCA264569C800BD8FF8 /* NavigationSecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		335BBE862639580D003080DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335BBE892639580D003080DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		335BBE8B2639580D003080DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3369FFC72645697F00BD8FF8 /* navigationFirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationFirstVC.swift; sourceTree = "<group>"; };
+		3369FFCA264569C800BD8FF8 /* NavigationSecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				335BBE862639580D003080DA /* Assets.xcassets */,
 				335BBE882639580D003080DA /* LaunchScreen.storyboard */,
 				335BBE8B2639580D003080DA /* Info.plist */,
+				3369FFC72645697F00BD8FF8 /* navigationFirstVC.swift */,
+				3369FFCA264569C800BD8FF8 /* NavigationSecondVC.swift */,
 			);
 			path = Week3;
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 				335BBE822639580C003080DA /* ViewController.swift in Sources */,
 				335BBE7E2639580C003080DA /* AppDelegate.swift in Sources */,
 				335BBE802639580C003080DA /* SceneDelegate.swift in Sources */,
+				3369FFC82645697F00BD8FF8 /* navigationFirstVC.swift in Sources */,
+				3369FFCB264569C800BD8FF8 /* NavigationSecondVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

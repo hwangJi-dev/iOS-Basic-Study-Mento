@@ -9,20 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var viewStatusLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        viewStatusLabel.text = "viewWillAppear"
-    }
-    
-    override func viewDidDisappear(_ animated: Bool) {
-        viewStatusLabel.text = "viewDidDisappear"
-    }
-
-
 }
 
