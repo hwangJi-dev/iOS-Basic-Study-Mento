@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Jd-xh-csw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -37,6 +37,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="97" y="94"/>
+        </scene>
+        <!--Layout PracticeVC-->
+        <scene sceneID="EKt-RV-yxH">
+            <objects>
+                <viewController id="9Jd-xh-csw" customClass="LayoutPracticeVC" customModule="week4_Study" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jVK-M4-ifY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZ5-Nc-65O">
+                                <rect key="frame" x="0.0" y="44" width="414" height="347"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwP-T8-keV">
+                                <rect key="frame" x="0.0" y="478" width="414" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ijd-gS-sKp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="과연 선택된 메뉴는??" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTN-27-ca7">
+                                <rect key="frame" x="135.5" y="438" width="143" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2I2-Bb-iVx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqd-5k-BBA">
+                                <rect key="frame" x="186" y="550" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fSD-vl-d2G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fSD-vl-d2G" firstAttribute="trailing" secondItem="uwP-T8-keV" secondAttribute="trailing" id="3LW-U3-xX3"/>
+                            <constraint firstItem="zZ5-Nc-65O" firstAttribute="trailing" secondItem="fSD-vl-d2G" secondAttribute="trailing" id="DVm-eD-TKG"/>
+                            <constraint firstItem="zZ5-Nc-65O" firstAttribute="leading" secondItem="fSD-vl-d2G" secondAttribute="leading" id="H9T-9F-1E2"/>
+                            <constraint firstItem="UTN-27-ca7" firstAttribute="centerX" secondItem="fSD-vl-d2G" secondAttribute="centerX" id="LmS-pI-UkH"/>
+                            <constraint firstItem="uwP-T8-keV" firstAttribute="leading" secondItem="fSD-vl-d2G" secondAttribute="leading" id="Vow-Xm-He1"/>
+                            <constraint firstItem="uwP-T8-keV" firstAttribute="top" secondItem="UTN-27-ca7" secondAttribute="bottom" constant="19" id="c7h-ax-GbB"/>
+                            <constraint firstItem="fSD-vl-d2G" firstAttribute="bottom" secondItem="zZ5-Nc-65O" secondAttribute="bottom" constant="471" id="oGW-h1-7Vb"/>
+                            <constraint firstItem="zZ5-Nc-65O" firstAttribute="top" secondItem="fSD-vl-d2G" secondAttribute="top" id="p2x-k5-bAP"/>
+                            <constraint firstItem="UTN-27-ca7" firstAttribute="top" secondItem="zZ5-Nc-65O" secondAttribute="bottom" constant="47" id="sWt-nd-VI4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="menuPicker" destination="zZ5-Nc-65O" id="eD7-1w-mtT"/>
+                        <outlet property="selectedClothLabel" destination="Zqd-5k-BBA" id="7yR-WD-t2f"/>
+                        <outlet property="selectedMenuLabel" destination="uwP-T8-keV" id="UXi-Ob-Clf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUN-TX-qrn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="93.75"/>
         </scene>
     </scenes>
     <resources>

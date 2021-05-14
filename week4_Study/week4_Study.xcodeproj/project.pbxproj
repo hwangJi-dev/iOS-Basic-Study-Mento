@@ -13,6 +13,7 @@
 		3317FF57264D72670054B5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3317FF55264D72670054B5D3 /* Main.storyboard */; };
 		3317FF59264D72690054B5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3317FF58264D72690054B5D3 /* Assets.xcassets */; };
 		3317FF5C264D726A0054B5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3317FF5A264D726A0054B5D3 /* LaunchScreen.storyboard */; };
+		33F15DDE264E621000A43CAE /* LayoutPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F15DDD264E621000A43CAE /* LayoutPracticeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3317FF58264D72690054B5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3317FF5B264D726A0054B5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3317FF5D264D726A0054B5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F15DDD264E621000A43CAE /* LayoutPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutPracticeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3317FF58264D72690054B5D3 /* Assets.xcassets */,
 				3317FF5A264D726A0054B5D3 /* LaunchScreen.storyboard */,
 				3317FF5D264D726A0054B5D3 /* Info.plist */,
+				33F15DDD264E621000A43CAE /* LayoutPracticeVC.swift */,
 			);
 			path = week4_Study;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				3317FF54264D72670054B5D3 /* ViewController.swift in Sources */,
 				3317FF50264D72670054B5D3 /* AppDelegate.swift in Sources */,
 				3317FF52264D72670054B5D3 /* SceneDelegate.swift in Sources */,
+				33F15DDE264E621000A43CAE /* LayoutPracticeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
