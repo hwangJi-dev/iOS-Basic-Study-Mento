@@ -20,6 +20,8 @@ class LayoutPracticeVC: UIViewController, UIPickerViewDelegate, UIPickerViewData
         super.viewDidLoad()
         menuPicker.delegate = self
         menuPicker.dataSource = self
+        selectedMenuLabel.text = "피자"
+        selectedClothLabel.text = "상의"
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
