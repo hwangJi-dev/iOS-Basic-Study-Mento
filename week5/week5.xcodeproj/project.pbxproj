@@ -15,6 +15,8 @@
 		33D7B3C426568FA80003C646 /* CollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D7B3C326568FA80003C646 /* CollectionView.storyboard */; };
 		33D7B3C626568FB70003C646 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3C526568FB70003C646 /* TableViewVC.swift */; };
 		33D7B3C826568FC80003C646 /* CollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3C726568FC80003C646 /* CollectionViewVC.swift */; };
+		33D7B3CB265707210003C646 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3CA265707210003C646 /* Contact.swift */; };
+		33D7B3CD265708E00003C646 /* ContactTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3CC265708E00003C646 /* ContactTVCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		33D7B3C326568FA80003C646 /* CollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionView.storyboard; sourceTree = "<group>"; };
 		33D7B3C526568FB70003C646 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		33D7B3C726568FC80003C646 /* CollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewVC.swift; sourceTree = "<group>"; };
+		33D7B3CA265707210003C646 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		33D7B3CC265708E00003C646 /* ContactTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTVCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				33D7B3C126568F530003C646 /* Storyboard */,
 				33D7B3C026568F4C0003C646 /* VC */,
 				33D7B3C226568F660003C646 /* Cell */,
+				33D7B3C9265707020003C646 /* Model */,
 				33D7B3BA26568F350003C646 /* Info.plist */,
 			);
 			path = week5;
@@ -93,8 +98,17 @@
 		33D7B3C226568F660003C646 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				33D7B3CC265708E00003C646 /* ContactTVCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		33D7B3C9265707020003C646 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				33D7B3CA265707210003C646 /* Contact.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +184,8 @@
 			files = (
 				33D7B3C626568FB70003C646 /* TableViewVC.swift in Sources */,
 				33D7B3AD26568F330003C646 /* AppDelegate.swift in Sources */,
+				33D7B3CD265708E00003C646 /* ContactTVCell.swift in Sources */,
+				33D7B3CB265707210003C646 /* Contact.swift in Sources */,
 				33D7B3AF26568F330003C646 /* SceneDelegate.swift in Sources */,
 				33D7B3C826568FC80003C646 /* CollectionViewVC.swift in Sources */,
 			);

@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="104" width="414" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="56" id="EmX-43-HBh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactTVCell" rowHeight="56" id="EmX-43-HBh" customClass="ContactTVCell" customModule="week5" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="56"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EmX-43-HBh" id="bSr-JQ-dbs">
@@ -28,7 +28,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O1i-LF-Ceq">
-                                                    <rect key="frame" x="16" y="16" width="382" height="24"/>
+                                                    <rect key="frame" x="16" y="16" width="29.5" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="BYp-Re-4t1"/>
                                                     </constraints>
@@ -36,13 +36,25 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="010-1234-1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO7-7K-DOB">
+                                                    <rect key="frame" x="278" y="17.5" width="120" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="YO7-7K-DOB" firstAttribute="centerY" secondItem="O1i-LF-Ceq" secondAttribute="centerY" id="1s4-Ix-Mna"/>
                                                 <constraint firstItem="O1i-LF-Ceq" firstAttribute="centerY" secondItem="bSr-JQ-dbs" secondAttribute="centerY" id="53G-b6-DBq"/>
-                                                <constraint firstAttribute="trailing" secondItem="O1i-LF-Ceq" secondAttribute="trailing" constant="16" id="9ML-eq-k5r"/>
                                                 <constraint firstItem="O1i-LF-Ceq" firstAttribute="leading" secondItem="bSr-JQ-dbs" secondAttribute="leading" constant="16" id="LjZ-Qn-H8c"/>
+                                                <constraint firstAttribute="trailing" secondItem="YO7-7K-DOB" secondAttribute="trailing" constant="16" id="a8z-hA-Hz9"/>
+                                                <constraint firstItem="YO7-7K-DOB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O1i-LF-Ceq" secondAttribute="trailing" constant="8" symbolic="YES" id="xTY-km-SNv"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="O1i-LF-Ceq" id="sY9-aX-8ID"/>
+                                            <outlet property="phoneNumberLabel" destination="YO7-7K-DOB" id="7rS-NJ-aZf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -56,6 +68,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="82g-lx-MQC" secondAttribute="trailing" symbolic="YES" id="4NH-Wt-wre"/>
                             <constraint firstItem="eKx-yd-sD3" firstAttribute="top" secondItem="82g-lx-MQC" secondAttribute="bottom" constant="10" id="DGC-tc-7WA"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eKx-yd-sD3" secondAttribute="trailing" id="VnT-dh-m70"/>
                             <constraint firstItem="82g-lx-MQC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="g1I-Uo-uaj"/>
@@ -64,10 +77,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eKx-yd-sD3" secondAttribute="bottom" id="wUH-eD-aYB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contactTV" destination="eKx-yd-sD3" id="Yfi-mh-Zas"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105.79710144927537" y="88.392857142857139"/>
+            <point key="canvasLocation" x="61" y="82"/>
         </scene>
     </scenes>
     <resources>
