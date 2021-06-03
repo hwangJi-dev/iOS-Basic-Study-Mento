@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334B432826611368001DDE18 /* demoTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B432726611368001DDE18 /* demoTVCell.swift */; };
+		334B432A26611631001DDE18 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B432926611631001DDE18 /* Demo.swift */; };
 		33D7B3AD26568F330003C646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3AC26568F330003C646 /* AppDelegate.swift */; };
 		33D7B3AF26568F330003C646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D7B3AE26568F330003C646 /* SceneDelegate.swift */; };
 		33D7B3B426568F330003C646 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33D7B3B226568F330003C646 /* TableView.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		334B432726611368001DDE18 /* demoTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoTVCell.swift; sourceTree = "<group>"; };
+		334B432926611631001DDE18 /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		33D7B3A926568F330003C646 /* week5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = week5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33D7B3AC26568F330003C646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33D7B3AE26568F330003C646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				33D7B3CC265708E00003C646 /* ContactTVCell.swift */,
+				334B432726611368001DDE18 /* demoTVCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				33D7B3CA265707210003C646 /* Contact.swift */,
+				334B432926611631001DDE18 /* Demo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,7 +188,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334B432826611368001DDE18 /* demoTVCell.swift in Sources */,
 				33D7B3C626568FB70003C646 /* TableViewVC.swift in Sources */,
+				334B432A26611631001DDE18 /* Demo.swift in Sources */,
 				33D7B3AD26568F330003C646 /* AppDelegate.swift in Sources */,
 				33D7B3CD265708E00003C646 /* ContactTVCell.swift in Sources */,
 				33D7B3CB265707210003C646 /* Contact.swift in Sources */,
