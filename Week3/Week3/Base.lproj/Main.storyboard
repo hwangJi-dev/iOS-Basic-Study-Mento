@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dUd-eU-ZZs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u19-hK-oo3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIb-Rp-T7a">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1117"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1166"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-Az-Pep">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
@@ -86,13 +86,23 @@
                                     <constraint firstItem="7Bo-Az-Pep" firstAttribute="leading" secondItem="vIb-Rp-T7a" secondAttribute="leading" id="PXe-7S-k9K"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySp-cg-LJb">
+                                <rect key="frame" x="0.0" y="1122" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="OAb-ip-huB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="esp-pM-Qyq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="esp-pM-Qyq" firstAttribute="bottom" secondItem="ySp-cg-LJb" secondAttribute="bottom" id="4po-HB-YRO"/>
                             <constraint firstItem="7Bo-Az-Pep" firstAttribute="height" secondItem="tty-YM-Rah" secondAttribute="height" priority="250" id="7TK-M2-FLi"/>
                             <constraint firstItem="vIb-Rp-T7a" firstAttribute="leading" secondItem="esp-pM-Qyq" secondAttribute="leading" id="ANO-rs-f6y"/>
                             <constraint firstItem="vIb-Rp-T7a" firstAttribute="top" secondItem="tty-YM-Rah" secondAttribute="top" id="LqW-zH-WAz"/>
+                            <constraint firstItem="ySp-cg-LJb" firstAttribute="trailing" secondItem="esp-pM-Qyq" secondAttribute="trailing" id="SYr-Xk-PSN"/>
+                            <constraint firstItem="ySp-cg-LJb" firstAttribute="leading" secondItem="esp-pM-Qyq" secondAttribute="leading" id="a7V-1A-4eg"/>
                             <constraint firstItem="esp-pM-Qyq" firstAttribute="trailing" secondItem="vIb-Rp-T7a" secondAttribute="trailing" id="dCk-VQ-OcO"/>
                             <constraint firstItem="esp-pM-Qyq" firstAttribute="bottom" secondItem="vIb-Rp-T7a" secondAttribute="bottom" id="dS5-Nm-oyx"/>
                             <constraint firstItem="7Bo-Az-Pep" firstAttribute="width" secondItem="tty-YM-Rah" secondAttribute="width" id="z4y-ej-7rl"/>
@@ -100,10 +110,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="지은사과" image="applelogo" catalog="system" selectedImage="heart.fill" id="QdY-vW-Wqc"/>
                     <size key="freeformSize" width="414" height="1200"/>
+                    <connections>
+                        <outlet property="scrollView" destination="vIb-Rp-T7a" id="0Uq-VC-d6E"/>
+                        <outlet property="toolbar" destination="ySp-cg-LJb" id="j15-rX-kC1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5h8-56-Wjv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-899" y="1904"/>
+            <point key="canvasLocation" x="-900.00000000000011" y="1903.7946428571427"/>
         </scene>
         <!--은솔사과-->
         <scene sceneID="YYV-17-cOt">
@@ -375,7 +389,6 @@
                         <color key="selectedImageTintColor" red="0.66666666669999997" green="0.1647058824" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="u19-hK-oo3" kind="relationship" relationship="viewControllers" id="nrJ-Ie-2fW"/>
                         <segue destination="s9k-ki-Wn6" kind="relationship" relationship="viewControllers" id="qgp-W6-9Jb"/>
                         <segue destination="BsN-WG-tOP" kind="relationship" relationship="viewControllers" id="7wJ-uA-21X"/>
                         <segue destination="CVH-Db-tmY" kind="relationship" relationship="viewControllers" id="dfU-nW-0qP"/>
